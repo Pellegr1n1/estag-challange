@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/products.css">
+    <script defer src="../js/product.js"></script>
+    <title>Products</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Suite Store</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="history.html">Historic</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="section">
+
+            <h1 id="title">Product</h1>
+            <div class="form">
+                <form id="form_product">
+                    <div class="form_field_text_1">
+                        <input type="text" name="product" id="id_product" placeholder="Name" required maxlength="50"  pattern="[A-Za-zÀ-ú\s]+" title="Digite apenas letras!">
+                    </div>
+                    <div class="form_columns">
+                        <input type="text" name="amount" id="id_amount" placeholder="Amount" required pattern="[1-9]\d*" title="Digite apenas números positivos e inteiros! (Exceto 0)">
+                        <input type="text" name="unit_price" id="id_unit_price" placeholder="Price" required pattern="\d+(\.\d+)?" title="Digite apenas números positivos!">
+                        <select name="category" id="id_category" required>
+                            <option value="" id="select_category" disabled selected>Select your category</option>
+                        </select>
+                    </div>
+                    <div class="div_btn_add">
+                        <input type="submit" name="add_product" id="btn_add" value="Add Product">
+                        <input type="button" class="btn_edit" id="btn_add" value="Salvar" style="display: none;">
+                        <input type="button" class="btn_cancel" id="btn_add" value="Cancelar" style="display: none;">
+                    </div>
+                </form>
+            </div>
+
+            <div class="table">
+                <table id="table_product">
+                    <tr>
+                        <th id="table_code">Code</th>
+                        <th>Product</th>
+                        <th>Amount</th>
+                        <th>Unit Price</th>
+                        <th>Category</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+    </body>
+
+</html>

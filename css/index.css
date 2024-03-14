@@ -1,0 +1,205 @@
+@import url(components/main.css);
+@import url(components/forms.css);
+@import url(components/table.css);
+
+/*----------------- Divider -----------------*/
+.vertical_line {
+    position: absolute;
+    height: 100%;
+    right: 50%;
+    border: 0.2mm solid var(--borderColor);
+}
+
+/*----------------- Sections -----------------*/
+.section_right {
+    margin-top: 20px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.section_left {
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+}
+
+/*----------------- Forms -----------------*/
+
+.section_left form input {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.section_left form {
+    width: 95%;
+}
+
+#id_tax_value {
+    width: 40%;
+}
+
+#id_unit_price {
+    width: 40%;
+}
+
+#id_product {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    color: grey;
+    border: 1px solid rgb(216, 216, 216);
+
+}
+
+
+/*----------------- Table -----------------*/
+
+.table_home, td{
+    width: 95%;
+    padding: 10px 35px;
+}
+
+#table_product {
+    text-align: left;
+}
+
+.table_fields_size {
+    text-align: center;
+}
+
+/*----------------- Tax and Total -----------------*/
+.tax_total label {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tax_total {
+    padding: 40px 15px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.tax_total input {
+    width: 100px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    color: grey;
+}
+
+#id_tax {
+    padding-left: 20px;
+}
+
+#id_total {
+    padding-left: 10px;
+}
+
+
+.form_tax {
+    padding-bottom: 5px;
+}
+
+
+/*----------------- Buttons -----------------*/
+.btn_delete {
+    padding: 0px 30px;
+    background-color: white;
+}
+
+.btn_delete:hover {
+    transition: 0.2s;
+    color: red;
+}
+
+.btn_delete:active {
+    transition: 0.1s;
+    color: rgba(163, 0, 0, 0.603)
+}
+
+.form_buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#btn_cancel {
+    color: white;
+    width: 150px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: rgb(138, 138, 138);
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+#btn_cancel:hover {
+    transition: 0.2s;
+    background-color: rgb(156, 156, 156);
+}
+
+#id_finish {
+    cursor: pointer;
+    width: 150px;
+    padding: 5px;
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+#id_finish:hover {
+    transition: 0.2s;
+    background-color: var(--secondaryColor);
+}
+
+/*----------------- Media -----------------*/
+@media (max-width:780px) {
+
+    header{
+        height: 35px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 10px;
+    }
+
+    input {
+        font-size: 10px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+
+    .menu ul a {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .tax_total label {
+        font-size: 10px;
+    }
+
+    .bi-trash {
+        width: 10px;
+        height: 10px;
+    }
+
+}

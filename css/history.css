@@ -1,0 +1,49 @@
+@import url(components/main.css);
+@import url(components/table.css);
+
+
+/*----------------- Section -----------------*/
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*----------------- Title -----------------*/
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondaryColor);
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+/*----------------- Table -----------------*/
+.table{
+    padding-top: 20px;
+}
+
+.table_history, td, th{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+
+/*----------------- Button -----------------*/
+#btn_view{
+    border: none;
+    background-color: white;
+}
+
+.bi-eye-fill{
+    color: var(--primaryColor);
+}
+
+.bi-eye-fill:hover{
+    transition: 0.2s;
+    color: var(--secondaryColor);
+}
+
+
+

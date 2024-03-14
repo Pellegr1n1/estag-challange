@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/index.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Suite Store</a></h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="history.html">Historic</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="section_left">
+        <div class="form">
+            <form onsubmit="addProduct(event)">
+                <div class="form_field_text_1">
+                    <select name="product" id="id_product" required onchange="optionSelected()">
+                        <option value="" disabled selected id="select_category">Select your product</option>
+                    </select>
+                </div>
+                <div class="form_columns">
+                    <input type="text" name="amount" id="id_amount" placeholder="Amount" required required pattern="[1-9]\d*" title="Digite apenas números positivos e inteiros! (Exceto 0)">
+                    <input type="text" name="tax_value" id="id_tax_value" placeholder="Tax" disabled>
+                    <input type="text" name="unit_price" id="id_unit_price" placeholder="Price" disabled>
+                </div>
+                <div class="div_btn_add">
+                    <input type="submit" name="add_product" id="btn_add" value="Add Product">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="vertical_line"></div>
+
+    <section class="section_right">
+        <div class="table">
+            <table class="table_home">
+                    <tr>
+                        <th id="table_product">Product</th>
+                        <th class="table_fields_size">Price</th>
+                        <th class="table_fields_size">Amount</th>
+                        <th class="table_fields_size">Total</th>
+                        <th class="table_fields_size">Delete</th>
+                    </tr>
+
+            </table>
+        </div>
+
+        <div class="tax_total">
+            <form>
+                <div class="form_tax">
+                    <label for="id_tax">Tax:</label>
+                    <input type="text" name="tax" id="id_tax" value="" disabled>
+                </div>
+
+                <div class="form_total">
+                    <label for="id_total">Total:</label>
+                    <input type="text" name="total" id="id_total" value="" disabled>
+                </div>
+        </div>
+
+        <div class="form_buttons">
+            <button id="btn_cancel">Cancel</button>
+            <input type="submit" name="finish" id="id_finish" value="Finish">
+        </div>
+        </form>
+    </section>
+
+
+
+
+</body>
+
+</html>

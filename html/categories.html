@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/categories.css">
+    <script defer src="../js/category.js"></script>
+    <title>Categories</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Suite Store</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="history.html">Historic</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section">
+            <h1 id="title">Category</h1>
+
+            <div class="form">
+                <form>
+                    <div class="form_field_text_1">
+                        <input type="text" name="category" id="id_category" placeholder="Category" maxlength="30"  pattern="[A-Za-zÀ-ú\s]+" title="Digite apenas letras!" required>
+                    </div>
+                    <div class="form_columns">
+                        <input type="text" name="tax" id="id_tax" placeholder="Tax" required pattern="^(100(\.0+)?|\d{1,2}(\.\d+)?)$" title="Digite apenas números de 0 a 100">
+                    </div>
+                    <div class="div_btn_add">
+                        <input type="submit" name="add_product" id="btn_add" value="Add Category">
+                    </div>
+                </form>
+            </div>
+
+            <div class="table">
+                <table id="table_category">
+                    <tr>
+                        <th>Code</th>
+                        <th>Category</th>
+                        <th>Tax</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </body>
+
+</html>

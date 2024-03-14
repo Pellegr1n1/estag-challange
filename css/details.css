@@ -1,0 +1,62 @@
+@import url(components/table.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    --primaryColor: #724bff;
+    --menuColorHover: rgb(200, 185, 255);
+    --secondaryColor: rgb(134, 100, 255);
+    --borderColor: rgb(197, 197, 197);
+}
+
+/*----------------- Section -----------------*/
+#section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----------------- Title -----------------*/
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondaryColor);
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*----------------- Table -----------------*/
+.table{
+    padding: 20px 0px 30px;
+}
+
+#table_details, td, th{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/*----------------- Button -----------------*/
+#btn_back{
+    cursor: pointer;
+    border: none;
+    background-color: var(--primaryColor);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#btn_back a{
+    color: white;
+    font-size: 12px;
+    padding: 0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#btn_back:hover{
+    background-color: var(--secondaryColor);
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+}
