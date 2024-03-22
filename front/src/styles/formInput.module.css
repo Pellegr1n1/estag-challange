@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,
+select {
+    font-size: 14px;
+    margin: 8px;
+    padding: 8px;
+}
+.submit {
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit:hover {
+    transition: 0.3s;
+    background-color: var(--secondColor);
+}
+

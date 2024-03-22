@@ -1,0 +1,58 @@
+.divForms {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.divForms input, select {
+    width: calc((50vw/3) - 16px);
+}
+
+.divTable{
+    width: 50%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name, #btn {
+    min-width: calc(50vw - 16px);
+}
+
+.divModal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-break: normal;
+}
+
+.divButtonsEdit{
+    display: flex;
+}
+
+.divButtonsEdit input {
+    min-width: calc(25vw - 16px);
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+}
+
+#btnEdit:hover {
+    transition: 0.3s;
+    background-color: rgb(117, 117, 117);
+}
+
+#btnCancel:hover {
+    transition: 0.3s;
+    background-color: var(--secondColor);
+}

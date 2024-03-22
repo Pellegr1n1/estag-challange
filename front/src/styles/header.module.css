@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#title{
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+}
+
+#sideIn {
+    animation: rotate 1.3s;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateY(0deg);
+    }from {
+        transform: rotateY(180deg);
+    }
+}

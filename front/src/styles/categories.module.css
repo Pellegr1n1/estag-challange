@@ -1,0 +1,47 @@
+.forms {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.forms input {
+    width: calc(15vw - 16px);
+}
+
+.msg {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.divTable{
+    width: 30vw;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn {
+    width: calc(15vw - 16px);
+}
+
+.divModal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-break: normal;
+}
+
+.modal h3 {
+    padding-bottom: 10px;
+}

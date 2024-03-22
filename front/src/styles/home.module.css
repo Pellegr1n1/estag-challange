@@ -1,0 +1,86 @@
+.sectionLeft {
+    display: block ;
+    float: left;
+    margin-left: 15px;
+    width: calc(50% - 25px);
+}
+
+.sectionRight {
+    display: block;
+    float: right;
+    margin-right: 15px;
+    width: calc(50% - 25px);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    width: calc((100%/3) - 16px);
+}
+
+.inputs{
+    width: calc(50vw - 16px);
+}
+
+#product, #btn {
+    width: calc(100% - 16px)
+}
+
+.divTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divBtnCancelFinish{
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+.divTaxTotal {
+    position: fixed;
+    bottom: 75px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.divTaxTotal label {
+    margin-left: 8px;
+}
+
+.divTaxTotal input {
+    width: 150px;
+}
+
+#btnCancel, #btnFinish {
+    width: 150px;
+}
+
+.divModal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-break: normal;
+}
+
+#table{
+    height: 42vh;
+    overflow: scroll;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50%;
+    max-height: 50%;
+}

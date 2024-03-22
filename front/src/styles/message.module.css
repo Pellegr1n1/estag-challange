@@ -1,0 +1,37 @@
+.message {
+    display: flex;
+    padding: 1em;
+    bottom: 30px;
+    position: fixed;
+    font-size: 14px;
+    color: white;
+    animation: back 1.5s forwards 0.8s;
+}
+
+@keyframes back {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.success {
+    background-color: #35aa31;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.error {
+    background-color: #c34a43;
+}
+
+.alert {
+    background-color: #d48918;
+}
